@@ -145,8 +145,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# supabase config
-supabase.js
 
-# supabase api calls
-services/
