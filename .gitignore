@@ -150,4 +150,3 @@ supabase.js
 
 # supabase api calls
 services/
-hooks/
