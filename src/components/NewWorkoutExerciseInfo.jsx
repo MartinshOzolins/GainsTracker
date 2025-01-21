@@ -46,8 +46,7 @@ export default function NewWorkoutExerciseInfo() {
                   <td className="border border-gray-300 px-4 py-2">
                     {exercise.data.sets
                       .map(
-                        (set) =>
-                          `${set.setNumber}.st ${set.reps}x${set.weight}kg`
+                        (set) => `${set.setNumber}. ${set.reps}x${set.weight}kg`
                       )
                       .join(", ")}
                   </td>
