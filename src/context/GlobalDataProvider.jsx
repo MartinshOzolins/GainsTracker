@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GlobalDataContext } from "../context/globalDataContext.js";
+import { GlobalDataContext } from "./globalDataContext.js";
 
 export default function GlobalDataProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(undefined);
