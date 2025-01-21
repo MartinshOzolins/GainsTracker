@@ -98,8 +98,8 @@ export const addNewWorkout = async (created_at, user_id, workout_name) => {
     {created_at: created_at, user_id: user_id, workout_name: workout_name},
   ])
   .select('id')
-  if (workout) return workout
-  if (error) console.log(error)
+  if (workout) return workout[0].id
+  if (error) return error
 } 
 
 
