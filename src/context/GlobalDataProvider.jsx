@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GlobalDataContext } from "./globalDataContext";
+import globalDataContext from "./GlobalDataContext";
 
 export default function GlobalDataProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -11,7 +11,7 @@ export default function GlobalDataProvider({ children }) {
   const [currentWorkoutDetails, setCurrentWorkoutDetails] = useState([]);
 
   return (
-    <GlobalDataContext.Provider
+    <globalDataContext.Provider
       value={{
         currentUser,
         setCurrentUser,
@@ -24,6 +24,6 @@ export default function GlobalDataProvider({ children }) {
       }}
     >
       {children}
-    </GlobalDataContext.Provider>
+    </globalDataContext.Provider>
   );
 }

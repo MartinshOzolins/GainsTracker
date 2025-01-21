@@ -6,7 +6,7 @@ import NonWeightExerciseForm from "../components/NonWeightExerciseForm";
 import NewWorkoutExerciseInfo from "./NewWorkoutExerciseInfo";
 
 //global context
-import { GlobalDataContext } from "../context/globalDataContext";
+import { GlobalDataContext } from "../context/GlobalDataContext";
 
 // custom hooks for db interaction
 import {

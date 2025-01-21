@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { useSendPasswordResetRequest } from "../hooks/userHooks/useUser";
 import CircularProgress from "@mui/material/CircularProgress";
-import { GlobalDataContext } from "../context/globalDataContext.js";
+import globalDataContext from "../context/GlobalDataContext.js";
 import { useNavigate } from "react-router-dom";
 
 export default function Profile() {
-  const { currentUser } = useContext(GlobalDataContext);
+  const { currentUser } = useContext(globalDataContext);
   const { mutateAsync: sendPasswordResetRequest } =
     useSendPasswordResetRequest();
 

@@ -6,13 +6,13 @@ import {
   useDeleteWorkout,
 } from "../hooks/workouts/useExercises";
 
-import { GlobalDataContext } from "../context/globalDataContext.js";
+import globalDataContext from "../context/GlobalDataContext.js";
 
 import { useQueryClient } from "@tanstack/react-query";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Workouts() {
-  const { currentUser } = useContext(GlobalDataContext);
+  const { currentUser } = useContext(globalDataContext);
   const [showChart] = useState(false);
   const [selectedWorkout, setSelectedWorkout] = useState(null);
   const [checkCount, setCheckCount] = useState(false);

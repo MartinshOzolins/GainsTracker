@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 //import supabase from "../supabase";
 import { useUserSignUp, useUserSignIn } from "../hooks/userHooks/useUser";
 
-import { GlobalDataContext } from "../context/globalDataContext.js";
+import globalDataContext from "../context/GlobalDataContext.js";
 
 export default function SignUp() {
-  const { currentUser, setCurrentUser } = useContext(GlobalDataContext);
+  const { currentUser, setCurrentUser } = useContext(globalDataContext);
 
   //local states
   const [formData, setFormData] = useState({ email: "", password: "" });

@@ -3,7 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 // native react hooks
 import { useContext, useState } from "react";
 //global context
-import { GlobalDataContext } from "../context/globalDataContext";
+import { GlobalDataContext } from "../context/GlobalDataContext";
 //navigation
 import { NavLink, useLocation } from "react-router-dom";
 // custom hook for sign out

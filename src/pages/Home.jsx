@@ -6,10 +6,10 @@ import ConfirmationEmailMessage from "../components/ConfirmationEmailMessage";
 import { useContext, useEffect, useState } from "react";
 
 //global context
-import { GlobalDataContext } from "../context/globalDataContext.js";
+import globalDataContext from "../context/GlobalDataContext.js";
 
 export default function Home() {
-  const { currentUser } = useContext(GlobalDataContext);
+  const { currentUser } = useContext(globalDataContext);
   useEffect(() => {
     if (currentUser && currentUser.user_metadata.email_verified === false) {
       setConfirmEmailMessage(true);
