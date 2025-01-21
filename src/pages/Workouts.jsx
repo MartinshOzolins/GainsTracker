@@ -5,7 +5,9 @@ import {
   useGetWorkoutCount,
   useDeleteWorkout,
 } from "../hooks/workouts/useExercises";
-import { GlobalDataContext } from "../context/globalDataContext";
+
+import { GlobalDataContext } from "../context/globalDataContext.js";
+
 import { useQueryClient } from "@tanstack/react-query";
 import { NavLink, useNavigate } from "react-router-dom";
 

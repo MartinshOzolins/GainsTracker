@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useSendPasswordResetRequest } from "../hooks/userHooks/useUser";
 import CircularProgress from "@mui/material/CircularProgress";
-import { GlobalDataContext } from "../context/globalDataContext";
+import { GlobalDataContext } from "../context/globalDataContext.js";
 import { useNavigate } from "react-router-dom";
 
 export default function Profile() {

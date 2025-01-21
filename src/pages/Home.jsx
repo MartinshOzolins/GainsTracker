@@ -6,7 +6,7 @@ import ConfirmationEmailMessage from "../components/ConfirmationEmailMessage";
 import { useContext, useEffect, useState } from "react";
 
 //global context
-import { GlobalDataContext } from "../context/globalDataContext";
+import { GlobalDataContext } from "../context/globalDataContext.js";
 
 export default function Home() {
   const { currentUser } = useContext(GlobalDataContext);

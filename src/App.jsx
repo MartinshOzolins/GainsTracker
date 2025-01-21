@@ -15,7 +15,7 @@ import Header from "./components/Header";
 // native hooks
 import { useContext, useEffect, useState } from "react";
 //global data
-import { GlobalDataContext } from "./context/globalDataContext";
+import { GlobalDataContext } from "./context/globalDataContext.js";
 
 export default function App() {
   const { currentUser, setCurrentUser } = useContext(GlobalDataContext);

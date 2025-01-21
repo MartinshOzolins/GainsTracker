@@ -2,7 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 //import supabase from "../supabase";
 import { useUserSignUp, useUserSignIn } from "../hooks/userHooks/useUser";
-import { GlobalDataContext } from "../context/globalDataContext";
+
+import { GlobalDataContext } from "../context/globalDataContext.js";
 
 export default function SignUp() {
   const { currentUser, setCurrentUser } = useContext(GlobalDataContext);

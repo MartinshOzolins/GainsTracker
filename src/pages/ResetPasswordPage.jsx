@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { usePasswordReset } from "../hooks/userHooks/useUser";
 import { useNavigate } from "react-router-dom";
-import { GlobalDataContext } from "../context/globalDataContext";
+import { GlobalDataContext } from "../context/globalDataContext.js";
 import supabase from "../supabase";
 export default function ResetPasswordPage() {
   const { currentUser, setCurrentUser } = useContext(GlobalDataContext);
