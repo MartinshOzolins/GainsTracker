@@ -6,7 +6,7 @@ import NonWeightExerciseForm from "../components/NonWeightExerciseForm";
 import NewWorkoutExerciseInfo from "./NewWorkoutExerciseInfo";
 
 //global context
-import { GlobalDataContext } from "../context/GlobalDataContext";
+import globalDataContext from "../context/GlobalDataContext";
 
 // custom hooks for db interaction
 import {
@@ -27,7 +27,7 @@ export default function WorkoutForm() {
     setWorkoutDate,
     workoutName,
     setWorkoutName,
-  } = useContext(GlobalDataContext);
+  } = useContext(globalDataContext);
 
   // Local error states
   const [inputError, setInputError] = useState("");

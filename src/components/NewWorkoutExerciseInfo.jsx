@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
 
 //global context
-import { GlobalDataContext } from "../context/GlobalDataContext";
+import globalDataContext from "../context/GlobalDataContext";
 
 export default function NewWorkoutExerciseInfo() {
-  const { currentWorkoutDetails } = useContext(GlobalDataContext);
+  const { currentWorkoutDetails } = useContext(globalDataContext);
 
   const [nonWeightExercises, setNonWeightExercises] = useState([]);
   const [weightExercises, setWeightExercises] = useState([]);

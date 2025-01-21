@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 
 // context
-import { GlobalDataContext } from "../context/GlobalDataContext";
+import globalDataContext from "../context/GlobalDataContext";
 
 export default function WeightExerciseForm() {
-  const { setCurrentWorkoutDetails } = useContext(GlobalDataContext);
+  const { setCurrentWorkoutDetails } = useContext(globalDataContext);
 
   //local error and loading states
   const [inputError, setInputError] = useState("");

@@ -3,14 +3,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 // native react hooks
 import { useContext, useState } from "react";
 //global context
-import { GlobalDataContext } from "../context/GlobalDataContext";
+import globalDataContext from "../context/GlobalDataContext";
 //navigation
 import { NavLink, useLocation } from "react-router-dom";
 // custom hook for sign out
 import { useUserSignOut } from "../hooks/userHooks/useUser";
 
 export default function Header() {
-  const { currentUser, setCurrentUser } = useContext(GlobalDataContext);
+  const { currentUser, setCurrentUser } = useContext(globalDataContext);
 
   // Sidebar state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
