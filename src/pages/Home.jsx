@@ -2,7 +2,7 @@
 import WorkoutForm from "../components/WorkoutForm";
 import ConfirmationEmailMessage from "../components/ConfirmationEmailMessage";
 
-// react hooks
+// react hook
 import { useContext, useEffect, useState } from "react";
 
 //global context
