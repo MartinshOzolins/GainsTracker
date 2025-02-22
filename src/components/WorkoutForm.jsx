@@ -132,7 +132,7 @@ export default function WorkoutForm() {
   };
 
   return (
-    <div className="p-3 bg-white shadow-md rounded-md w-full sm:w-[500px]">
+    <div className="p-3 bg-white shadow-md rounded-md w-full sm:w-[500px] ">
       <div className="flex flex-col mb-4 text-sm md:text-base">
         {inputError.length > 0 && <p className="text-red-500">{inputError}</p>}
         <label htmlFor="date" className="">

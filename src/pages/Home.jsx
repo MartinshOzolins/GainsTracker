@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 
 //global context
 import globalDataContext from "../context/GlobalDataContext.js";
+import Hero from "../components/Hero.jsx";
 
 export default function Home() {
   const { currentUser } = useContext(globalDataContext);
@@ -19,12 +20,15 @@ export default function Home() {
   const [confirmEmailMessage, setConfirmEmailMessage] = useState(false);
 
   return (
-    <div className="w-full h-full flex flex-col items-center pt-2">
+    <div className="w-full min-h-screen flex flex-col items-center pt-2">
       {!currentUser ? (
-        <p className="text-md sm:text-lg text-center py-3">
-          Start tracking your workout progress{" "}
-          <span className="font-semibold">TODAY</span>
-        </p>
+        <>
+          <p className="text-md sm:text-lg text-center py-3">
+            Start tracking your workout progress{" "}
+            <span className="font-semibold">TODAY</span>
+          </p>
+          <Hero />
+        </>
       ) : (
         <p className="text-lg md:text-2xl">Add a new Workout Session</p>
       )}
